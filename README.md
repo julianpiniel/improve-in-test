@@ -39,12 +39,12 @@ Database was implemented with MongoDB, but I am also capable of implementing the
     <br/>
     <br/>
 
--   After installing dependencies, creating .env file (and populating it) you should be good to go.
-    <br/>
-    <br/>
--   Final step: create a db in MongoDB called "improve". If you dont know how, <a href="https://www.mongodb.com/es/basics/create-database">here</a> is a tutorial
+-   After installing dependencies, creating .env file (and populating it) you will need to create a db in MongoDB called "improve". If you dont know how, <a href="https://www.mongodb.com/es/basics/create-database">here</a> is a tutorial.
+    <br/><br/>
 
-Just run "npm start" on console.
+# OK, I'm Done with installations and set-up. How do I run this server?
+
+If you come to this point, I'm guessing you are good to go. Just run "npm start" on console.
 If you see the message
 <br/>
 <br/>
@@ -53,5 +53,5 @@ If you see the message
 Connected to mongodb://localhost:27017/improve"
 <br/> <br/>
 
-or similar, congratulations! <br/>
+or similar, congratulations! <br/><br/>
 Server is running on port 3001 and connected to db. Now you can test routes with Postman or any software you like.

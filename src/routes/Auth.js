@@ -1,4 +1,3 @@
-const { verifyToken } = require('../middlewares/verifyToken');
 const { login, logout, renew } = require('../middlewares/Auth');
 const router = require('express').Router();
 

@@ -8,12 +8,12 @@ const { verifyToken } = require('../middlewares/verifyToken');
 
 const router = require('express').Router();
 
-router.use(verifyToken);
+//router.use(verifyToken);
 router
 	.route('/')
 	.post(createUser)
-	.get(readUser)
-	.put(updateUser)
-	.delete(deleteUser);
+	.get(verifyToken, readUser)
+	.put(verifyToken, updateUser)
+	.delete(verifyToken, deleteUser);
 
 module.exports = router;

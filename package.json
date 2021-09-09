@@ -1,0 +1,40 @@
+{
+	"name": "crud_test",
+	"version": "1.0.0",
+	"description": "Crud Test",
+	"main": "index.js",
+	"scripts": {
+		"start": " cross-env NODE_ENV=production nodemon -L index.js",
+		"test": "cross-env NODE_ENV=test jest  --silent --verbose",
+		"test:watch": "npm run test -- --watch",
+		"test:coverage": "cross-env NODE_ENV=test jest --coverage",
+		"dev": "cross-env NODE_ENV=test nodemon -L index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/julianpiniel/crud_test.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/julianpiniel/crud_test/issues"
+	},
+	"homepage": "https://github.com/julianpiniel/crud_test#readme",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"cookie-parser": "^1.4.5",
+		"cors": "^2.8.5",
+		"cross-env": "^7.0.3",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"jest": "^27.0.6",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^5.13.7",
+		"morgan": "^1.10.0",
+		"nodemon": "^2.0.12"
+	},
+	"devDependencies": {
+		"supertest": "^6.1.6"
+	}
+}

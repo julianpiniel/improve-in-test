@@ -33,8 +33,8 @@ Database was implemented with MongoDB, but I am also capable of implementing the
     This .env file should be in the same folder as package.json file, and should contain the following lines:
     <br/>
     <br/>
-    MONGO_DB_URI=improve
-    MONGO_DB_TEST=improve_test
+    MONGO_DB_URI=improve <br/>
+    MONGO_DB_TEST=improve_test <br/>
     PORT=3001
     <br/>
     <br/>

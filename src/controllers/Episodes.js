@@ -75,7 +75,7 @@ const postEpisodes = async (req, res, next) => {
 			release_date,
 			genre,
 			actors,
-			show: showId,
+			show: showId._id,
 			director: directorId,
 		});
 		const result = await Episode.save();

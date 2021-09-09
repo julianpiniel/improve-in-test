@@ -4,11 +4,13 @@ const express = require('express'),
 const users = require('./Users'),
 	auth = require('./Auth'),
 	movies = require('./Movies'),
-	episodes = require('./Episodes');
+	episodes = require('./Episodes'),
+	shows = require('./Shows');
 
 router.use('/users', users);
 router.use('/auth', auth);
 router.use('/movies', movies);
-router.use('/shows', episodes);
+router.use('/episodes', episodes);
+router.use('/shows', shows);
 
 module.exports = router;

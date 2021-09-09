@@ -3,10 +3,12 @@ const express = require('express'),
 
 const users = require('./Users'),
 	auth = require('./Auth'),
-	movies = require('./Movies');
+	movies = require('./Movies'),
+	episodes = require('./Episodes');
 
 router.use('/users', users);
 router.use('/auth', auth);
 router.use('/movies', movies);
+router.use('/shows', episodes);
 
 module.exports = router;

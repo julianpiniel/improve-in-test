@@ -7,7 +7,8 @@ const tvShowSchema = require('./TVShow'),
 	movieSchema = require('./Movie'),
 	directorSchema = require('./Director'),
 	actorSchema = require('./Actor'),
-	userSchema = require('./User');
+	userSchema = require('./User'),
+	episodeSchema = require('./Episode');
 
 const connectionString =
 	NODE_ENV === 'test' ? MONGO_DB_TEST : 'mongodb://localhost:27017/improve';
@@ -26,7 +27,8 @@ const TVShowModel = mongoose.model('shows', tvShowSchema),
 	MovieModel = mongoose.model('movies', movieSchema),
 	DirectorModel = mongoose.model('directors', directorSchema),
 	ActorModel = mongoose.model('actors', actorSchema),
-	UserModel = mongoose.model('users', userSchema);
+	UserModel = mongoose.model('users', userSchema),
+	EpisodeModel = mongoose.model('episodes', episodeSchema);
 
 module.exports = {
 	TVShowModel,
@@ -34,4 +36,5 @@ module.exports = {
 	DirectorModel,
 	ActorModel,
 	UserModel,
+	EpisodeModel,
 };
